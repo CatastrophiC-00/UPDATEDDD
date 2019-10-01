@@ -18,7 +18,7 @@ class EnrolController extends Controller
     	return view('subjects.create');
     }
 
-     public function store()
+    public function store()
     {
         request()->validate([
             'name' => 'required',
@@ -28,6 +28,6 @@ class EnrolController extends Controller
     	$subject->name = request()->name;
     	$subject->save();
 
-    	return redirect('/subjects');
+        return redirect('/subjects');
     }
 }

@@ -17,4 +17,4 @@ Route::get('/', function () {
 
 Route::get('/subjects', 'EnrolController@index');
 Route::get('/subjects/add', 'EnrolController@create');
-Route::post('/subject/store', 'EnrolController@store');
+Route::post('/subjects/store', 'EnrolController@store');
