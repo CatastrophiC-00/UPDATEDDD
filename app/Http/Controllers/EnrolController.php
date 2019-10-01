@@ -10,12 +10,12 @@ class EnrolController extends Controller
    public function index()
     {
     	$subjects = Subject::all();
-    	return view('index')->with('subjects', $subjects);
+    	return view('subjects.index')->with('subjects', $subjects);
     }
 
     public function create()
     {
-    	return view('create');
+    	return view('subjects.create');
     }
 
      public function store()

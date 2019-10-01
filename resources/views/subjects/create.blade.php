@@ -5,8 +5,8 @@
 		<form method="POST" action="/subjects/store">
 			@csrf
 		  <div class="form-group">
-		    <label for="name">Name</label>
-		    <input type="text" class="form-control" name="name" placeholder="Name">
+		    <label for="name">Subject Name</label>
+		    <input type="text" class="form-control" name="name" placeholder="Subject Name">
 		  </div>
 		  <button type="submit" class="btn btn-primary">Submit</button>
 		</form>
